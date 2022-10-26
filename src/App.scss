@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inconsolata", monospace;
+}
+
+.App {
+  height: 100vh;
+  width: 100vw;
+}
+
+#explorer {
+  background: #22252a;
+  width: 100vw;
+  height: 48px;
+  display: flex;
+  align-items: center;
+
+  .explorer-title {
+    display: flex;
+    align-items: center;
+    color: #aab2bf;
+    font-weight: 500;
+    font-size: 18px;
+    height: 100%;
+    width: 20%;
+    max-width: 375px;
+    padding: 0 32px;
+  }
+
+  .active-page {
+    display: flex;
+    align-items: center;
+    background-color: #323842;
+    height: 100%;
+    padding: 0 24px;
+    border-bottom: 1px solid #eee;
+    svg {
+      height: 25px;
+      width: 25px;
+      margin-right: 12px;
+    }
+
+    p {
+      color: #fff;
+    }
+  }
+}
+
+#content-container {
+  width: 100vw;
+  height: calc(100% - 48px);
+  display: flex;
+}
+
+nav {
+  background-color: #22252b;
+  height: 100%;
+  width: 20%;
+  max-width: 375px;
+  display: flex;
+  flex-direction: column;
+  .nav-projectname {
+    margin-left: 32px;
+    padding: 4px;
+    font-weight: 700;
+    color: #abb2bf;
+    background-color: #282c34;
+  }
+  .nav-listitem {
+    display: flex;
+    align-items: center;
+    max-height: 32px;
+    width: 100%;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    svg {
+      margin-right: 8px;
+    }
+    p {
+      color: #aab2bf;
+    }
+
+    &:hover {
+      background-color: #323742;
+      cursor: pointer;
+    }
+  }
+
+  .nav-listitem-child1 {
+    padding-left: 48px;
+  }
+  .nav-listitem-child2 {
+    padding-left: 64px;
+  }
+}
+
+#body {
+  background-color: #282c34;
+  width: 80%;
+  flex-grow: 1;
+  padding: 48px;
+  overflow-y: scroll;
+  section {
+    color: rgb(240, 240, 240);
+
+    h1 {
+      font-size: 48px;
+      line-height: 64px;
+      letter-spacing: 3px;
+      font-weight: 700;
+    }
+    h2 {
+      font-size: 32px;
+      line-height: 64px;
+      letter-spacing: 3px;
+      font-weight: 700;
+    }
+    p {
+      font-size: 28px;
+      letter-spacing: 1px;
+      font-weight: 500;
+    }
+  }
+}
+
+#home {
+  .animatedh2 {
+    display: flex;
+    align-items: center;
+  }
+  .changing-word {
+    color: #e06b76;
+  }
+
+  .important-links {
+    padding: 32px 0;
+    .important-links-links-container {
+      display: flex;
+
+      a {
+        font-size: 24px;
+        line-height: 32px;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 8px 12px;
+        padding: 8px;
+        border-radius: 8px;
+        min-height: 72px;
+        min-width: 72px;
+        svg {
+          transition: transform 0.2s ease;
+
+          path {
+            fill: #6f7179;
+          }
+
+          &:hover {
+            color: #e4c07b;
+
+            svg {
+              transform: scale(1.2);
+
+              path {
+                fill: #d6dae0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#about {
+  .about-img-and-content {
+    display: flex;
+
+    img {
+      border: 1px solid black;
+      background-color: coral;
+      width: 500px;
+    }
+
+    p {
+      flex-grow: 1;
+      max-width: 650px;
+      font-size: 24px;
+      line-height: 24px;
+      padding: 32px;
+    }
+  }
+}
+
+#skills {
+  .all-skills-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .skill {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 24px;
+      width: 250px;
+      border-radius: 8px;
+      padding: 24px 12px;
+      background-color: #323842;
+      box-shadow: 0 3px 4px 4px #22262d;
+      svg {
+        height: 128px;
+      }
+      p {
+        padding: 18px;
+      }
+    }
+  }
+}
+
+#projects {
+  .project {
+    display: flex;
+    flex-direction: column;
+    .project-links {
+      button {
+        margin: 18px 18px 18px 0;
+        padding: 12px 24px;
+        font-size: 18px;
+        border-radius: 4px;
+        background-color: #eee;
+        &:hover {
+          background-color: #ccc;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .techStack {
+      display: flex;
+      flex-wrap: wrap;
+
+      div {
+        margin: 0 12px;
+        svg {
+          height: 48px;
+          width: 48px;
+        }
+        p {
+          display: none;
+        }
+      }
+    }
+  }
+}
