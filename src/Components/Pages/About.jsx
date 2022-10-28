@@ -1,9 +1,11 @@
+import jim from "../../assets/images/jim.png";
+
 const About = () => {
   return (
     <section id="about">
       <h1>Who is this guy?</h1>
       <div className="about-img-and-content">
-        <img src="" alt="Image of James Kehs" />
+        <img src={jim} alt="James Kehs" />
         <p>
           Hi, I'm James. I typically go by anything other than James. Jimmy, Jim, Jimbo, Slim Jim, Jimmy Neutron, I've heard it all. Just pick one and
           roll with it.

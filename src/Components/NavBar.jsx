@@ -26,11 +26,11 @@ const NavBar = () => {
       </div>
       <Link to="/projects/1" className="nav-listitem nav-listitem-child2">
         <ReactIcon />
-        <p>Project1.jsx</p>
+        <p>DevJobs.jsx</p>
       </Link>
       <Link to="/projects/2" className="nav-listitem nav-listitem-child2">
         <ReactIcon />
-        <p>Project2.jsx</p>
+        <p>PasswordGenerator.jsx</p>
       </Link>
       <Link to="/projects/3" className="nav-listitem nav-listitem-child2">
         <ReactIcon />

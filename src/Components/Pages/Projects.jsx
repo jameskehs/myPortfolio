@@ -15,7 +15,7 @@ const Projects = () => {
 };
 
 const Project = ({ project }) => {
-  const { name, desc, gitLink, siteLink } = project;
+  const { name, desc, gitLink, siteLink, images } = project;
   return (
     <div className="project">
       <h1>{name}</h1>
@@ -29,16 +29,16 @@ const Project = ({ project }) => {
         </a>
       </div>
       <div className="techStack">
+        <p>Made with:</p>
         {project.techStack.map((techStack) => {
-          return (
-            <div>
-              {React.createElement(techStack.icon)}
-              <p>{techStack.name}</p>
-            </div>
-          );
+          return React.createElement(techStack.icon);
         })}
       </div>
-      <div></div>
+      <div>
+        {images.map((img) => (
+          <img src={img.src} alt={img.alt} />
+        ))}
+      </div>
     </div>
   );
 };
