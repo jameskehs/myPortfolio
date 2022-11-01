@@ -1,9 +1,9 @@
 import { HTML5IconLarge, CSSIcon, ReactIconLarge, NodeIcon, PostgresIcon, ExpressIcon, JavascriptIcon } from "../../assets";
-import devjobs1 from "../../assets/images/devjobs1.png";
-import devjobs2 from "../../assets/images/devjobs2.png";
-import devjobs3 from "../../assets/images/devjobs3.png";
-import passwordgen1 from "../../assets/images/passwordgen1.png";
-import passwordgen2 from "../../assets/images/passwordgen2.png";
+import devjobs1 from "../../assets/images/devjobs1.webp";
+import devjobs2 from "../../assets/images/devjobs2.webp";
+import devjobs3 from "../../assets/images/devjobs3.webp";
+import passwordgen1 from "../../assets/images/passwordgen1.webp";
+import passwordgen2 from "../../assets/images/passwordgen2.webp";
 
 const allProjects = [
   {
