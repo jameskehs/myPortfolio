@@ -32,14 +32,14 @@ const NavBar = () => {
         <ReactIcon />
         <p>PasswordGenerator.jsx</p>
       </Link>
-      <Link to="/projects/3" className="nav-listitem nav-listitem-child2">
+      {/* <Link to="/projects/3" className="nav-listitem nav-listitem-child2">
         <ReactIcon />
         <p>Project3.jsx</p>
       </Link>
       <Link to="/contact" className="nav-listitem nav-listitem-child1">
         <HTML5Icon />
         <p>contact.html</p>
-      </Link>
+      </Link> */}
     </nav>
   );
 };
